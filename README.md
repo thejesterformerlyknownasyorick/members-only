@@ -1,0 +1,1 @@
+Practice with authorization and access with website allowing autorhized users to see posts and posting user, and unauthorized users to only see post but not posting user.
