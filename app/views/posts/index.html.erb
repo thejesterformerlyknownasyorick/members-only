@@ -1,0 +1,15 @@
+<h1>Secrets:</h1>
+<ul>
+    <% @posts.each do |post| %>
+        <li>
+            <p><%= post.title %></p>
+            <%= post.body %>
+            <% if user_signed_in? %>
+                <h6>This secret belongs to: <%= User.find(post.user_id).email %></h6>
+            <% end %>
+        </li>
+    <% end %>
+</ul>
+
+<%= button_to "Sign in", new_user_session_path, :method => :get %><br><br>
+<%= button_to "Sign out", destroy_user_session_path, :method => :delete %>

@@ -1,0 +1,7 @@
+<%= form_with model: @post do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %><br><br>
+    <%= form.label :body %>
+    <%= form.text_area :body, size: "30x10" %>
+    <%= form.submit "Your secret is safe with me" %>
+<% end %>
