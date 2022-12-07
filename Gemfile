@@ -42,9 +42,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-# Devise gemfile found at https://github.com/heartcombo/devise
-gem "devise"
-
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -73,3 +70,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "devise"

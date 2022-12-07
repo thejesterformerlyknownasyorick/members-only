@@ -14,7 +14,7 @@ class PostsController < ApplicationController
         @post.user_id = current_user.id if current_user
 
         if @post.save
-            flash[:success] = "Just kidding, everyone is gonna see this."
+            flash[:success] = "Just kidding, I'm telling everyone. I'm texting your family right now."
             redirect_to posts_path
         else
             render :new, status: :unprocessable_entity
